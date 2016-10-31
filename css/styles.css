@@ -1,0 +1,200 @@
+      * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+  
+            .row {
+                width: 100%;
+                margin: 0 auto;
+                max-width: 1080px;
+            }
+            
+            .row:after {
+                clear:both;
+                content: "";
+                display: block;
+            }
+            
+            [class*="col-"] {
+                float: left;
+                padding: 15px;
+            }
+            
+            .col-1 {width: 8.33%;}
+            .col-2 {width: 16.66%;}
+            .col-3 {width: 25%;}
+            .col-4 {width: 33.33%;}
+            .col-5 {width: 41.66%;}
+            .col-6 {width: 50%;}
+            .col-7 {width: 58.33%;}
+            .col-8 {width: 66.66%;}
+            .col-9 {width: 75%;}
+            .col-10 {width: 83.33%;}
+            .col-11 {width: 91.66%;}
+            .col-12 {width: 100%;}
+   
+           .header-text {
+               text-transform: uppercase; 
+               text-align: center;
+               vertical-align: text-bottom;
+               font-weight: 100;
+               margin-top:40px;
+            }
+
+            .logo {
+                display: inline;
+                margin: auto;
+                width: 100%;
+                height: 100%;
+
+            }
+
+            #container {
+                width:100%;
+                margin: auto;
+                background-image: url("../assets/img/bg.jpg");
+                background-repeat:repeat;
+                background-size: contain;
+                padding-top: 50px;
+                padding-bottom:50px;
+            }
+
+
+            .embed-container { 
+                
+                position: relative; 
+                padding-bottom: 30%; 
+                overflow: hidden;  
+                width:100%;
+                margin: 0 auto;
+                max-width: 960px;
+            } 
+            .embed-container iframe, .embed-container object, .embed-container embed { 
+                position: absolute; 
+                top: 0; 
+                left: 0; 
+                width: 100%; 
+                height: 100%; 
+            }
+            
+            
+            .social {
+                text-align: center;
+                padding: 15px 0;
+            }
+            
+            .form {
+                background-color: black;
+                opacity: 0.75;
+                width: 100%;
+                max-width: 960px;
+                margin: auto;   
+            }
+            
+            .form-text {
+                text-transform: uppercase; 
+                text-align: center;
+                font-weight: 100;
+                color: white;
+                padding-top: 15px;
+                font-size: 20px;
+            }
+            
+            hr {
+                color: white;
+                margin: 0 auto;
+                margin-top: 10px;
+                width: 70%;
+            }
+
+            *::-webkit-input-placeholder {
+                color: black;
+            }
+            *:-moz-placeholder {
+                /* FF 4-18 */
+                color: black;
+            }
+            *::-moz-placeholder {
+                /* FF 19+ */
+                color: black;
+            }
+            *:-ms-input-placeholder {
+                /* IE 10+ */
+                color: black;
+            }
+            
+            .form-box {
+                width: 70%;
+                margin: 0 auto;
+                margin-top: 5px;
+                padding: 20px;
+                
+            }
+
+            .input-box {
+                width: 100%; 
+                padding: 5px; 
+                margin-top: 20px;
+                font-weight: bold;
+                background-color: white;
+                color: black;
+                opacity: 0.90;
+            }
+
+            .submit-btn {
+                background-color: black;
+                opacity: 0.75;
+                border: 1px solid white;
+                color: white;
+                padding: 10px 30px;
+                margin: 0 auto;
+                display: block;
+                margin-top: 10px;
+                text-transform: uppercase;
+                cursor:pointer;
+            }
+            
+            .submit-btn:hover {
+                background-color:grey;
+            }
+            @media only screen and (max-width: 1500px) {
+
+                .embed-container { 
+                padding-bottom: 35%; 
+                }
+            }
+            @media only screen and (max-width: 1100px) {
+
+                .embed-container { 
+                padding-bottom: 40%; 
+                }
+            }
+            
+            @media only screen and (max-width: 768px) {
+                .header-text {
+                    margin-top:25px;
+                }
+                .embed-container { 
+                padding-bottom: 50%; 
+                }
+            }
+            @media only screen and (max-width: 500px) {
+                .header-text {
+                    margin-top:15px;
+                    font-size:15px;
+                }
+            }
+            @media only screen and (max-width: 400px) {
+                .header-text {
+                    margin-top:10px;
+                    font-size:12px;
+                }
+            }
+            @media only screen and (max-width: 350px) {
+                .header-text {
+                    margin-top:10px;
+                    font-size:10px;
+                }
+            }
+            
